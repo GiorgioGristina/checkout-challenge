@@ -7,3 +7,5 @@ As this project is in Ruby, you need to make sure you have Ruby installed. You c
 ```
  ruby -v
 ```
+
+Which should return the version of Ruby if you have it installed.
