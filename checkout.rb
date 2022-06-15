@@ -1,6 +1,6 @@
 
 class Checkout
-  
+  attr_reader :basket, :total, :prices, :min_spend_deal
 
   def initialize(args = {})
     @basket = []
