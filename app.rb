@@ -62,5 +62,15 @@ while item != ""
 end
 
 
-p co.basket
-p co.totalPrice
+total = co.totalPrice
+
+basket = []
+ co.basket.each do |item|
+   item["quantity"].times{ basket << item["code"] } 
+end
+
+
+puts "total price before discount: #{co.total}"
+puts "basket: #{basket.length == 0 ? "basket is empty" : basket.join(", ")}"
+puts "Total price is $#{total}"
+
