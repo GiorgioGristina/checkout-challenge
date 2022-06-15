@@ -24,4 +24,19 @@ class Checkout
     end
   end
 
+  def totalPrice
+    @basket.each_with_index do |product, index|
+      @prices[product["code"]]["price"].each do |k, v|
+        if product["quantity"] >= k.to_i
+          # @total += (product["quantity"] / k.to_i) * (v * k.to_i)
+          # @basket[index]["quantity"] = product["quantity"] % k.to_i
+          @total += product["quantity"] * v
+          break
+        end
+      end
+    end
+    total = @total >= @min_spend_deal["min_spend"] ? 0.01 * @total * (100 - @min_spend_deal["percentOff"]) : @total
+    total.round(2)
+  end
+  
 end

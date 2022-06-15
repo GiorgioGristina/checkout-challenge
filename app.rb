@@ -63,3 +63,4 @@ end
 
 
 p co.basket
+p co.totalPrice

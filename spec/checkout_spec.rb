@@ -39,4 +39,12 @@ describe "Checkout" do
   end
 
   
+  it 'should return the total price with the discount apply according to the property passe to the check out when instantiated' do
+    co = Checkout.new(promotional_rules)
+    co.scan("001")
+    co.scan("002")
+    co.scan("003")
+    total = co.totalPrice
+    expect(total).to eq 66.78 
+  end
 end
