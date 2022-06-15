@@ -33,7 +33,15 @@ promotional_rules = {
 
 co = Checkout.new(promotional_rules)
 
-p co.total
-p co.basket
-p co.prices
-p co.min_spend_deal
+
+
+puts "Todays items:"
+promotional_rules["prices"].each do |key, value|
+  puts " "
+  puts "Code: #{key}"
+  puts "Name: #{value["name"]}"
+  value["price"].each do |k, v|
+    puts "buy #{k} #{value["name"]} for #{v}"
+  end
+  
+end
