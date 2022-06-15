@@ -9,4 +9,8 @@ class Checkout
     @min_spend_deal = args["min_spend_deal"]
   end
 
+  def scan
+    
+  end
+
 end
