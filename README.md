@@ -4,4 +4,8 @@ application that when a products are scanned apply any discount on total cost  a
 # How to run the application
 As this project is in Ruby, you need to make sure you have Ruby installed. You can run the command:
 
-```ruby -v```
+```
+
+ruby -v
+
+```
