@@ -26,6 +26,7 @@ git clone https://github.com/GiorgioGristina/checkout-challenge.git
 Make sure you have the bundler gem installed. To install the dependencies, run the command:
 
 ```
+cd checkout-challenge
 bundle install
 ```
 
