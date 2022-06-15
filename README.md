@@ -9,3 +9,10 @@ As this project is in Ruby, you need to make sure you have Ruby installed. You c
 ```
 
 Which should return the version of Ruby if you have it installed.
+
+Create a new folder to clone the project in. For instance:
+
+```
+mkdir ~/$GITHUB_USERNAME/checkout
+cd ~/$GITHUB_USERNAME/checkout
+```
