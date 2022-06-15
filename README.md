@@ -37,3 +37,6 @@ To run the project, enter this line in the terminal:
 ```
 ruby app.rb
 ```
+
+# Thank You
+I would like to take this opportunity to thank you for including me in this process. It has been a great pleasure attempting this challenge. I'm looking forward to elaborating on my execution and getting your insight about what I can improve on. Many thanks!
